@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
 }
+
 
 :root {
     --text-color: black;
@@ -15,26 +18,34 @@
     --switch-svg-url: url(../assets/sun.svg);
     --switch-span-background-color: rgba(0, 0, 0, 0.4);
     --switch-span-border-color: rgba(0, 0, 0, 0.5);
+    --box-shadow-color: black;
+    --box-shadow-table: 10px 7px 7px black;
+    --social-icon-spotify: black;
+
+    height: 100vh;
+
 }
 
 .black {
-
+    --back-ground-url: url(../assets/1024/width-360-800-black-mobi.jpg);
     --text-color: white;
-    --back-ground-url: url(../assets/1024/width-1440x1024-black-desk.jpg );
     --border-color: rgba(255, 255, 255, 0.5);
     --back-ground-color: rgba(255, 255, 255, 0.1);
     --color-footer: white;
     --border-color-hover: wheat;
-    --back-ground-color-social: rgba(255, 255, 255, 0.2);
+    --back-ground-color-social: rgba(0, 0, 0, 0.2);
     --switch-svg-url: url(../assets/moon-svg.svg);
     --switch-span-background-color: rgba(255, 255, 255, 0.1);
     --switch-span-border-color: rgba(255, 255, 255, 0.5);
-
+    --box-shadow-color: white;
+    --box-shadow-table: 6px -3px 12px rgba(255, 255, 255, 0.1);
+    --social-icon-spotify: #ffffff;
 }
 
 body * {
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
+
 }
 
 body {
@@ -51,11 +62,19 @@ body {
     max-width: 588px;
     margin: auto;
     padding-top: 54px;
+
+
 }
 
 .profile {
     text-align: center;
     padding: 24px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.profile p {
+
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 
@@ -126,12 +145,8 @@ body {
 
 
 
-
-
 .info {
     padding: 24px;
-
-
 }
 
 .info ul {
@@ -139,6 +154,19 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+
+.info ul li .instagram:hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.info ul li .spotify:hover {
+    background: linear-gradient(120deg, #1db954, #191414);
+}
+
+.info ul li .github:hover {
+    background: linear-gradient(45deg, #000, #0000, #000);
 }
 
 .info ul li a {
@@ -149,11 +177,11 @@ body {
 
     border: 1px solid var(--border-color);
     background-color: var(--back-ground-color);
-    border-radius: 8px;
-
+    border-radius: 16px 55px;
+    font-family: 'Nunito Sans', sans-serif;
     text-decoration: none;
     font-weight: 500px;
-
+    box-shadow: var(--box-shadow-table);
     transition: background-color 0.9s, transform 0.6s;
 }
 
@@ -197,6 +225,51 @@ body {
 
 }
 
+.social .spotify svg {
+    fill: var(--social-icon-spotify);
+    transition: all 0.3s;
+}
+
+.social .spotify svg:hover {
+    background-color: green;
+
+    border-radius: 100%;
+}
+
+.social .youtube svg {
+    transition: all 0.3s;
+}
+
+.social .youtube svg:hover {
+    background: linear-gradient(45deg, #b14b4b, #e04a4a, #000);
+    box-shadow: 0px -3px 30px rgba(120, 64, 190, 0.6);
+    border-radius: 100%;
+}
+
+.social .git svg {
+    transition: all 0.3s;
+}
+
+.social .git svg:hover {
+    background: linear-gradient(45deg, #000, #0000, #000);
+    box-shadow: 0px -3px 30px rgba(120, 64, 190, 0.6);
+
+    border-radius: 100%;
+}
+
+.social .instagram svg {
+    transition: all 0.3s;
+}
+
+.social .instagram svg:hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    box-shadow: 0px -3px 30px rgba(120, 64, 190, 0.6);
+    padding: 3px;
+    border-radius: 100%;
+
+
+}
+
 .social div a {
     padding: 0 16px;
     display: flex;
@@ -205,6 +278,8 @@ body {
     padding: 16px;
     border-radius: 50%;
     transition: background-color 0.9s;
+
+
 }
 
 .social div a:hover {
@@ -229,6 +304,8 @@ body {
 }
 
 @media (max-width: 768px) {
+
+
     :root {
         --back-ground-url: url(../assets/1024/width-360-800-white-mobi.jpg);
 
@@ -243,6 +320,8 @@ body {
     }
 
 }
+
+
 
 
 

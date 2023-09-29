@@ -7,19 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz@1,6..12&display=swap');
+    </style>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); */
     </style>
 </head>
 
 <body>
-
     <div class="container">
 
         <div class="profile">
             <img src="../assets/Avatar.png" alt="avart-black-mode" id="avatar">
 
-            <p>@Name</p>
+            <p>Emerson Fernandes</p>
         </div>
 
         <div class="switch" onclick="trocaMode3()" id="buuttonMode">
@@ -35,10 +40,11 @@
 
         <div class="info">
             <ul>
-                <li> <a href="#" target="_blank"> Inscreva-se no NLW</a></li>
-                <li> <a href="#" target="_blank"> Baixar meu e-book</a></li>
-                <li> <a href="#" target="_blank"> Ver meu Portifólio</a></li>
-                <li> <a href="#" target="_blank"> Conheça Etc...</a></li>
+                <li> <a href="#" target="_blank" class="instagram"> Instagram</a></li>
+                <li> <a href="https://open.spotify.com/playlist/5pmBAY27KGzzn0ZJPI4TtN?si=1c793317576f48f0"
+                        target="_blank" class="spotify"> Spotify</a></li>
+                <li> <a href="#" target="_blank" class="github"> GitHub</a></li>
+                <li> <a href="#"> More...</a></li>
             </ul>
         </div>
 
@@ -46,7 +52,7 @@
         <div class="social">
 
             <div class="git">
-                <a href="#" target="_blank" title="Github" name="logo-github">
+                <a id="link-git" href="#" target="_blank" title="Github" name="logo-github" class="">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24"
                         height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -59,7 +65,7 @@
             </div>
 
             <div class="instagram">
-                <a href="#" target="_blank" title="Instagram" name="logo-instagram">
+                <a id="link-instagram" href="#" target="_blank" title="Instagram" name="logo-instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -72,7 +78,8 @@
             </div>
 
             <div class="youtube">
-                <a href="#" target="_blank" title="Youtube" name="logo-youtube">
+                <a id="link-youtube" href="https://www.youtube.com/" target="_blank" title="Youtube" name="logo-youtube"
+                    class="logo-youtube">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
                         width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -84,28 +91,20 @@
             </div>
 
 
-            <div class="linkedin">
-                <a href="#" target="_blank" title="Linkdin" name="logo-linkdin">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
-                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z">
-                        </path>
-                        <path d="M8 11l0 5"></path>
-                        <path d="M8 8l0 .01"></path>
-                        <path d="M12 16l0 -5"></path>
-                        <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+            <div class="spotify">
+                <a id="link-spotify" href="https://open.spotify.com/playlist/5pmBAY27KGzzn0ZJPI4TtN?si=1c793317576f48f0"
+                    target="_blank" title="spotify" name="logo-linkdin" class="logo-spotify">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5em"
+                        viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z" />
                     </svg>
                 </a>
             </div>
         </div>
 
-
-
         <div class="footer">
-
-            <p>@Exemple... <a href="#">Name or Link</a></p>
+            <p>@Developed By Emerson Fernandes</p>
 
         </div>
 
