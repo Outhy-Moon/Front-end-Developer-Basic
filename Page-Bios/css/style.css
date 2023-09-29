@@ -20,7 +20,7 @@
 .black {
 
     --text-color: white;
-    --back-ground-url: url(../assets/1024/width-1440x1024-black-desk.jpg );
+    --back-ground-url: url(../assets/1080/width-1080x1920.jpg);
     --border-color: rgba(255, 255, 255, 0.5);
     --back-ground-color: rgba(255, 255, 255, 0.1);
     --color-footer: white;
