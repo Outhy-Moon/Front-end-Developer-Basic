@@ -47,11 +47,11 @@ function trocaMode3() {
     let getImg = document.querySelector("#avatar");
 
     if (html.classList.contains("black")) {
-        getImg.setAttribute("src", "../assets/Avatar.png") //setAttribute() vai ajustar ou modificar ou adicionar um atributo 
+        getImg.setAttribute("src", "../assets/MI_26082023_1409.jpg") //setAttribute() vai ajustar ou modificar ou adicionar um atributo 
         getImg.setAttribute("alt", "avart-black-mode");
 
     } else {
-        getImg.setAttribute("src", "../assets/Ellipse.jpg")
+        getImg.setAttribute("src", "../assets/MI_26082023_1409.jpg")
         getImg.setAttribute("alt", "avart-ligth-mode");
     }
 
